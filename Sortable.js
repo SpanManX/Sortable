@@ -2826,6 +2826,7 @@
       isMultiDrag: false,
       delayStartGlobal: function delayStartGlobal(_ref) {
         var dragged = _ref.dragEl;
+        if (!this.sortable.options.multiDrag) return;
         dragEl$1 = dragged;
       },
       delayEnded: function delayEnded() {
