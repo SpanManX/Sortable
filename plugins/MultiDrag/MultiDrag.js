@@ -71,6 +71,7 @@ function MultiDragPlugin() {
 
 
 		delayStartGlobal({ dragEl: dragged }) {
+			if (!this.sortable.options.multiDrag) return;
 			dragEl = dragged;
 		},
 
